@@ -10,6 +10,11 @@ Contact: Jian Tang, Microsoft Research Asia, jiatang@microsoft.com, tangjianpku@
 
 #Usage
 
+We provide both the Windows and LINUX versions. The package uses some external packages to generate random numbers for the edge-sampling algorithm in the LINE model. For Windows version, we use the BOOST package, which can be downloaded at http://www.boost.org/; for LINUX, we use the GSL package, which can be downloaded at http://www.gnu.org/software/gsl/
+
+Network Input:
+
+
 
 #Citation
 
