@@ -28,8 +28,8 @@ of bad 4
 ```
 ./line -train network_file -output embedding_file -binary 1 -size 200 -order 2 -negative 5 -samples 100 -rho 0.025 -threads 20
 ```
-- -train, the input file of network;
-- -output, the output file of network embedding;
+- -train, the input file of a network;
+- -output, the output file of the embedding;
 - -binary, whether saving the output file in binary mode; the default is 0 (off);
 - -size, the dimension of the embedding; the default is 100;
 - -order, the order of the proximity used; 1 for first order, 2 for second order; the default is 2;
