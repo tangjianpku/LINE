@@ -28,7 +28,15 @@ of bad 4
 ```
 ./line -train network_file -output embedding_file -binary 1 -size 200 -order 2 -negative 5 -samples 100 -rho 0.025 -threads
 ```
-
+- train:
+- output:
+- binary
+- size
+- order
+- negative
+- samples
+- rho
+- threads
 #Citation
 ```
 @inproceedings{tang2015line,
