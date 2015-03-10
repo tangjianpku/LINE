@@ -41,7 +41,8 @@ of bad 4
 
 
 
-#Citation
+##Citation
+
 ```
 @inproceedings{tang2015line,
   title={LINE: Large-scale Information Network Embedding.},
