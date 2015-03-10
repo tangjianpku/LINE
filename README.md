@@ -24,7 +24,10 @@ bad of 4
 of bad 4
 ```
 
-
+**Run**
+```
+./line -train network_file -output embedding_file -binary 1 -size 200 -order 2 -negative 5 -samples 100 -rho 0.025 -threads
+```
 
 #Citation
 ```
