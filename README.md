@@ -15,18 +15,19 @@ We provide both the Windows and LINUX versions. The toolkit uses some external p
 **Network Input**
 
 The input of a network consists of the edges in the network. Each line of the input file represents a DIRECTED edge in the network, which is specified as the format "source_node target_node weight" (can be either separated by blank or tab). For each undirected edge, users must use TWO DIRECTED edges to represent it. Here is an input example of a word co-occurrence network:
+```
 good the 3
 the good 3
 good bad 1
 bad good 1
 bad of 4
 of bad 4
-
+```
 
 
 
 #Citation
-
+```
 @inproceedings{tang2015line,
   title={LINE: Large-scale Information Network Embedding.},
   author={Tang, Jian and Qu, Meng and Wang, Mingzhe and Zhang, Ming and Mei, Qiaozhu},
@@ -34,3 +35,4 @@ of bad 4
   year={2015},
   organization={ACM}
 }
+```
