@@ -53,7 +53,7 @@ of bad 4
 ```
 @inproceedings{tang2015line,
   title={LINE: Large-scale Information Network Embedding.},
-  author={Tang, Jian and Qu, Meng and Wang, Mingzhe and Zhang, Ming and Mei, Qiaozhu},
+  author={Tang, Jian and Qu, Meng and Wang, Mingzhe and Zhang, Ming and Yan, Jun and Mei, Qiaozhu},
   booktitle={WWW},
   year={2015},
   organization={ACM}
