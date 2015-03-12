@@ -10,7 +10,7 @@ Project page: https://sites.google.com/site/pkujiantang/line
 ```
 ##Usage
 
-We provide both the Windows and LINUX versions. The toolkit uses some external packages to generate random numbers for the edge-sampling algorithm in the LINE model. For Windows version, we use the BOOST package, which can be downloaded at http://www.boost.org/; for LINUX, we use the GSL package, which can be downloaded at http://www.gnu.org/software/gsl/
+We provide both the Windows and LINUX versions. To complile the souce codes, some external packages are required, which are used to generate random numbers for the edge-sampling algorithm in the LINE model. For Windows version, the BOOST package is used and can be downloaded at http://www.boost.org/; for LINUX, the GSL package is used and can be downloaded at http://www.gnu.org/software/gsl/
 
 **Network Input**
 
