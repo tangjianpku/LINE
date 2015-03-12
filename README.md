@@ -37,7 +37,6 @@ of bad 4
 - -samples, the total number of training samples (*Million);
 - -rho, the starting value of the learning rate; the default is 0.025;
 - -threads, the total number of threads used; the default is 1.
-- 
 
 **Files in the folder**
 - line.cpp, the souce code of the LINE;
