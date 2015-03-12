@@ -37,6 +37,14 @@ of bad 4
 - -samples, the total number of training samples (*Million);
 - -rho, the starting value of the learning rate; the default is 0.025;
 - -threads, the total number of threads used; the default is 1.
+- 
+
+**Files in the folder**
+- line.cpp, the souce code of the LINE;
+- reconstruct.cpp, the code used for reconstructing the sparse networks into dense ones, which is described in Section 4.3;
+- normalize.cpp, the code for normalizing the embeddings (l2 normalization);
+- concatenate.cpp, the code for concatenating the embeddings with 1st-order and 2nd-order;
+- train_youtube.bat/train_youtube.sh, the demo to train the embeddings on the reconstructed Youtube network. The orginal Youtube network is available at http://socialnetworks.mpi-sws.mpg.de/data/youtube-links.txt.gz
 
 
 
