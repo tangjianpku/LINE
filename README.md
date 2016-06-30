@@ -45,6 +45,7 @@ of bad 4
 - concatenate.cpp, the code for concatenating the embeddings with 1st-order and 2nd-order;
 
 **Examples**
+
 An example to run the Youtube data set (available at http://socialnetworks.mpi-sws.mpg.de/data/youtube-links.txt.gz) is provided at the files train_youtube.bat/train_youtube.sh
 
 
