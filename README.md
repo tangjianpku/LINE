@@ -6,7 +6,7 @@ This is the LINE toolkit developed for embedding very large-scale information ne
 ```
 Contact: Jian Tang, tangjianpku@gmail.com
 Project page: https://sites.google.com/site/pkujiantang/line
-
+This work was done when the author was working at Microsoft Research
 ```
 ##Usage
 
