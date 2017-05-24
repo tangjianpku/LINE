@@ -98,7 +98,7 @@ int AddVertex(char *name)
 	int length = strlen(name) + 1;
 	if (length > MAX_STRING) length = MAX_STRING;
 	vertex[num_vertices].name = (char *)calloc(length, sizeof(char));
-	strcpy(vertex[num_vertices].name, name);
+	strncpy(vertex[num_vertices].name, name, length-1);
 	vertex[num_vertices].degree = 0;
 	num_vertices++;
 	if (num_vertices + 2 >= max_num_vertices)
