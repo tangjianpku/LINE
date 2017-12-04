@@ -374,7 +374,7 @@ void TrainLINE() {
 
 	if (order != 1 && order != 2)
 	{
-		printf("Error: order should be eighther 1 or 2!\n");
+		printf("Error: order should be either 1 or 2!\n");
 		exit(1);
 	}
 	printf("--------------------------------\n");
