@@ -5,7 +5,7 @@ g++ -lm -pthread -Ofast -march=native -Wall -funroll-loops -ffast-math -Wno-unus
 g++ -lm -pthread -Ofast -march=native -Wall -funroll-loops -ffast-math -Wno-unused-result normalize.cpp -o normalize
 g++ -lm -pthread -Ofast -march=native -Wall -funroll-loops -ffast-math -Wno-unused-result concatenate.cpp -o concatenate
 
-./reconstruct -train net_youtube.txt -output net_youtube_dense.txt -depth 2 -k-max 1000
+./reconstruct -train net_youtube.txt -output net_youtube_dense.txt -depth 2 -threshold 1000
 ./line -train net_youtube_dense.txt -output vec_1st_wo_norm.txt -binary 1 -size 128 -order 1 -negative 5 -samples 10000 -threads 40
 ./line -train net_youtube_dense.txt -output vec_2nd_wo_norm.txt -binary 1 -size 128 -order 2 -negative 5 -samples 10000 -threads 40
 ./normalize -input vec_1st_wo_norm.txt -output vec_1st.txt -binary 1
