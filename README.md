@@ -15,6 +15,9 @@ We provide both the Windows and LINUX versions. To compile the souce codes, some
 **Network Input**
 
 The input of a network consists of the edges in the network. Each line of the input file represents a DIRECTED edge in the network, which is specified as the format "source_node target_node weight" (can be either separated by blank or tab). For each undirected edge, users must use TWO DIRECTED edges to represent it. Here is an input example of a word co-occurrence network:
+
+If your input is an directed graph, set `weighted` to 1, else keep it as default.
+
 ```
 good the 3
 the good 3
@@ -37,6 +40,8 @@ of bad 4
 - -samples, the total number of training samples (*Million);
 - -rho, the starting value of the learning rate; the default is 0.025;
 - -threads, the total number of threads used; the default is 1.
+- -weighted, whether the graph is weighted; the default is 0.
+
 
 **Files in the folder**
 - line.cpp, the souce code of the LINE;

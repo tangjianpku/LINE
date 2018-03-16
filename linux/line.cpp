@@ -38,7 +38,7 @@ struct ClassVertex {
 
 char network_file[MAX_STRING], embedding_file[MAX_STRING];
 struct ClassVertex *vertex;
-int is_binary = 0, num_threads = 1, order = 2, dim = 100, num_negative = 5;
+int is_binary = 0, num_threads = 1, order = 2, dim = 100, num_negative = 5, weighted=0;
 int *vertex_hash_table, *neg_table;
 int max_num_vertices = 1000, num_vertices = 0;
 long long total_samples = 1, current_sample_count = 0, num_edges = 0;
@@ -116,7 +116,7 @@ void ReadData()
 	FILE *fin;
 	char name_v1[MAX_STRING], name_v2[MAX_STRING], str[2 * MAX_STRING + 10000];
 	int vid;
-	double weight;
+	double weight=1.0;
 
 	fin = fopen(network_file, "rb");
 	if (fin == NULL)
@@ -141,8 +141,15 @@ void ReadData()
 	fin = fopen(network_file, "rb");
 	num_vertices = 0;
 	for (int k = 0; k != num_edges; k++)
-	{
-		fscanf(fin, "%s %s %lf", name_v1, name_v2, &weight);
+	{   
+        if(weighted)
+        {
+		    fscanf(fin, "%s %s %lf", name_v1, name_v2, &weight);
+        }
+        else
+        {
+		    fscanf(fin, "%s %s", name_v1, name_v2);
+        }
 
 		if (k % 10000 == 0)
 		{
@@ -444,6 +451,8 @@ int main(int argc, char **argv) {
 		printf("\t\tUse <int> threads (default 1)\n");
 		printf("\t-rho <float>\n");
 		printf("\t\tSet the starting learning rate; default is 0.025\n");
+		printf("\t-weighted; default is 0\n");
+		printf("\t\twhether the graph is weighted; default is 0\n");
 		printf("\nExamples:\n");
 		printf("./line -train net.txt -output vec.txt -binary 1 -size 200 -order 2 -negative 5 -samples 100 -rho 0.025 -threads 20\n\n");
 		return 0;
@@ -457,6 +466,7 @@ int main(int argc, char **argv) {
 	if ((i = ArgPos((char *)"-samples", argc, argv)) > 0) total_samples = atoi(argv[i + 1]);
 	if ((i = ArgPos((char *)"-rho", argc, argv)) > 0) init_rho = atof(argv[i + 1]);
 	if ((i = ArgPos((char *)"-threads", argc, argv)) > 0) num_threads = atoi(argv[i + 1]);
+	if ((i = ArgPos((char *)"-weighted", argc, argv)) > 0) weighted = atoi(argv[i + 1]);
 	total_samples *= 1000000;
 	rho = init_rho;
 	vertex = (struct ClassVertex *)calloc(max_num_vertices, sizeof(struct ClassVertex));
