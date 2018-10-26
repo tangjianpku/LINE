@@ -280,7 +280,7 @@ void InitSigmoidTable()
 	sigmoid_table = (real *)malloc((sigmoid_table_size + 1) * sizeof(real));
 	for (int k = 0; k != sigmoid_table_size; k++)
 	{
-		x = 2 * SIGMOID_BOUND * k / sigmoid_table_size - SIGMOID_BOUND;
+		x = 2.0 * SIGMOID_BOUND * k / sigmoid_table_size - SIGMOID_BOUND;
 		sigmoid_table[k] = 1 / (1 + exp(-x));
 	}
 }
@@ -322,7 +322,7 @@ void *TrainLINEThread(void *id)
 		//judge for exit
 		if (count > total_samples / num_threads + 2) break;
 
-		if (count - last_count>10000)
+		if (count - last_count > 10000)
 		{
 			current_sample_count += count - last_count;
 			last_count = count;
