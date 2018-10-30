@@ -46,8 +46,9 @@ of bad 4
 
 **Examples**
 
-An example to run the Youtube data set (available at http://socialnetworks.mpi-sws.mpg.de/data/youtube-links.txt.gz) is provided at the files train_youtube.bat/train_youtube.sh
+We provide an example running script for the Youtube data set (available at http://socialnetworks.mpi-sws.mpg.de/data/youtube-links.txt.gz). The script will first run LINE to learn network embeddings, then it will evaluate the learned embeddings on the node classification task.
 
+To run the script, users first need to compile the evaluation codes by running make.sh in the folder "evaluate". Afterwards, we can run train_youtube.bat or train_youtube.sh to run the whole pipeline.
 
 **Citation**
 
