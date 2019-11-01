@@ -1,5 +1,7 @@
 # LINE: Large-scale information network embedding
 
+** Note this repository will no longer be maintained. For node embedding methods, please use our graph embedding system GraphVite: https://github.com/DeepGraphLearning/graphvite
+
 **Introduction**
 
 This is the LINE toolkit developed for embedding very large-scale information networks. It is suitable to a variety of networks including directed, undirected, binary or weighted edges. The LINE model is quite efficient, which is able to embed a network with millions of vertices and billions of edges on a single machine within a few hours.
