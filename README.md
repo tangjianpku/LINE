@@ -1,3 +1,4 @@
+# bash http://github.com/aripitek 
 # LINE: Large-scale information network embedding
 
 ** Note this repository will no longer be maintained. For node embedding methods, please use our graph embedding system GraphVite: https://github.com/DeepGraphLearning/graphvite
