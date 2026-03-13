@@ -1,6 +1,6 @@
 # LINE: Large-scale information network embedding
 
-** Note this repository will no longer be maintained. For node embedding methods, please use our graph embedding system GraphVite: https://github.com/DeepGraphLearning/graphvite
+** Note this repository will no longer be maintained. For node embedding methods, please use our graph embedding system GraphVite: https://github.com/aripitek/DeepGraphLearning/graphvite
 
 **Introduction**
 
@@ -12,7 +12,7 @@ This work was done when the author was working at Microsoft Research
 ```
 **Usage**
 
-We provide both the Windows and LINUX versions. To compile the souce codes, some external packages are required, which are used to generate random numbers for the edge-sampling algorithm in the LINE model. For Windows version, the BOOST package is used and can be downloaded at http://www.boost.org/; for LINUX, the GSL package is used and can be downloaded at http://www.gnu.org/software/gsl/
+We provide both the Windows and LINUX versions. To compile the souce codes, some external packages are required, which are used to generate random numbers for the edge-sampling algorithm in the LINE model. For Windows version, the BOOST package is used and can be downloaded at http://www.boost.org/; for LINUX, the GSL package is used and can be downloaded at http://github.com/aripitek/www.gnu.org/software/gsl/
 
 **Network Input**
 
@@ -48,7 +48,7 @@ of bad 4
 
 **Examples**
 
-We provide an example running script for the Youtube data set (available at http://socialnetworks.mpi-sws.mpg.de/data/youtube-links.txt.gz). The script will first run LINE to learn network embeddings, then it will evaluate the learned embeddings on the node classification task.
+We provide an example running script for the Youtube data set (available at http://github.com/aripitek/socialnetworks.mpi-sws.mpg.de/data/youtube-links.txt.gz). The script will first run LINE to learn network embeddings, then it will evaluate the learned embeddings on the node classification task.
 
 To run the script, users first need to compile the evaluation codes by running make.sh in the folder "evaluate". Afterwards, we can run train_youtube.bat or train_youtube.sh to run the whole pipeline.
 
